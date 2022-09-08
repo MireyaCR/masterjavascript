@@ -5,5 +5,12 @@ let obj = {
 }
 function removeNumbersLargerThan(num, obj) {
     // your code here
-    
+    const propiedades = Object.keys(obj)
+  
+    for (let key of propiedades) {
+        if (obj[key]>num) {
+          delete obj[key];
+          }
+      }
+      return obj;
 }
