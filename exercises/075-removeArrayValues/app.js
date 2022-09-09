@@ -3,10 +3,9 @@ function removeArrayValues(obj) {
     
     const propiedades = Object.keys(obj)
     for (let key of propiedades) {
-     //   console.log(typeof obj[key])
-           if (typeof obj[key] === "number") {
-           delete obj[key];
-       }
+     if (typeof obj[key]=== "object") {
+        delete obj[key];
+        }
     }
     return obj;
 }

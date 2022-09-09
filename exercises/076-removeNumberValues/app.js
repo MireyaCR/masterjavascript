@@ -7,11 +7,12 @@ function removeNumberValues(obj) {
     // your code here
     const propiedades = Object.keys(obj)
     for (let key of propiedades) {
-        if (obj[key] 
-          delete obj[key];
-          }
-            return obj;
-   }
+     if (typeof obj[key]=== "number") {
+        delete obj[key];
+        }
+    }
+    return obj;
+}
 
 removeNumberValues(obj);
 console.log(obj); // --> { b: 'remaining' }
