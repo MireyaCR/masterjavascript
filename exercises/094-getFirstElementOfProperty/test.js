@@ -8,11 +8,11 @@ test('Function getFirstElementOfProperty must exist', () => {
 });
 
 test('Function getFirstElementOfProperty must return something', () => {
-  expect(getFirstElementOfProperty([1, 2])).not.toBe(undefined);
+  expect(getFirstElementOfProperty({key:[1, 2, 3]},'key')).not.toBe(undefined);
 });
 
 test('Function getFirstElementOfProperty must return a number', () => {
-  expect(typeof getFirstElementOfProperty([1, 2])).toBe('number');
+  expect(typeof getFirstElementOfProperty({key:[1, 2, 3]},'key')).toBe('number');
 });
 
 test('The function must return the first element of the array located at a given key.', () => {

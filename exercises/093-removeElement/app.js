@@ -1,7 +1,7 @@
 // Write your function here
 function removeElement(arr, discarder) {
  
-  const filterarray = arr.filter(discarder)
+  const filterarray = arr.filter((element)=> element!=discarder)
  
   return filterarray;
 }

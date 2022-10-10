@@ -5,7 +5,7 @@ function getElementsLessThan100AtProperty(obj,key) {
         for (let index = 0; index < obj[key].length; index++) {
             const element = obj[key][index];
             if (element < 100) {
-                arr.push(obj[key][index]);
+                arr.push(element);
             }
         }
     }
