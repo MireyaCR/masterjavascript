@@ -11,7 +11,7 @@ let obj = {
   a: 1,
   b: 2,
   c: 3,
-  //d: 4,
+  d: 4,
 };
 let output = countNumberOfKeys(obj);
 console.log(output); // --> 3

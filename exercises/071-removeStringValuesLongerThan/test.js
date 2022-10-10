@@ -35,5 +35,5 @@ test('The function must return the same object if no property is longer than the
         type: 'Mint'
     }
     removeStringValuesLongerThan(7, obj)
-    expect(obj).toEqual({ name: 'Tea', price: 5, location: 'Colombia', type:'Mint' })
+    expect(obj).toEqual({ name: 'Tea', price: 5, type:'Mint' })
 });

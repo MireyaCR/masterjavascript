@@ -13,6 +13,7 @@ function select(arr,obj) {
     a: 5,
     b: 2,
     c: 4,
+    f: 6,
   };
 let output = select(arr, obj);
 console.log( output); // --> { a: 1, c: 3 }
